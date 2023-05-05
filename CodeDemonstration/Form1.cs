@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 namespace CodeDemonstration
 {
@@ -10,9 +11,9 @@ namespace CodeDemonstration
             label1.Text = "";
 
             //example of a switch-case for the document
-            int age = 15;
-            string rating;
-
+            int age = 1;
+            string rating = "G";
+            doSwitch:
             switch (age)
             {
                 case 13:
@@ -28,15 +29,25 @@ namespace CodeDemonstration
                     break;
 
                 default:
-                    rating = "G";
+                    //do nothing
                     break;
             }
             Console.Write(rating);
 
+            //example if-statments
+            if (age < 22)
+            {
+                Debug.WriteLine(age + " | " + rating); age++; goto doSwitch;
+            }
+            else
+            {
+                Debug.WriteLine("no more :(");
+            }
+
             //testing the yeild return to see what it does
             foreach (int number in SomeNumbers())
             {
-                Console.Write(number.ToString() + " ");
+                Debug.Write(number.ToString() + " ");
                 label1.Text+= number.ToString() + " ";
             }
             // Output: 3 5 8
