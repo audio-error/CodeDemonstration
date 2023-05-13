@@ -102,7 +102,7 @@ namespace CodeDemonstration
         }
         private void startButton_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            caclulator form = new caclulator();
             form.Show(this);  //Show Form assigning this form as the forms owner
             Hide();
         }
