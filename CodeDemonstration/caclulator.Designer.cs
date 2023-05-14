@@ -260,6 +260,8 @@
             this.Controls.Add(this.b4);
             this.Name = "caclulator";
             this.Text = "Form2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.caclulator_FormClosing);
+            this.Load += new System.EventHandler(this.caclulator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,14 +1,23 @@
+﻿using CodeDemonstration;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CodeDemonstration
 {
-    public partial class ReportExamples : Form
+    public partial class Report_Examples : Form
     {
-        public ReportExamples()
+        public Report_Examples()
         {
             InitializeComponent();
-            label1.Text = "";
 
             //example of a switch-case for the document
             int age = 1;
@@ -64,7 +73,6 @@ namespace CodeDemonstration
             foreach (int number in SomeNumbers())
             {
                 Debug.Write(number.ToString() + " ");
-                label1.Text+= number.ToString() + " ";
             }
             // Output: 3 5 8
             Console.Read();
@@ -82,7 +90,7 @@ namespace CodeDemonstration
             objs.Add("2");//string
             objs.Add(true);//bool
             objs.Add(1.23f);//float
-            myClass m = new myClass();  objs.Add(m); //even abstract types like classes
+            myClass m = new myClass(); objs.Add(m); //even abstract types like classes
             //this list is now technically multi-type
         }
         public static System.Collections.IEnumerable SomeNumbers() //Inumerable example
@@ -104,23 +112,38 @@ namespace CodeDemonstration
         {
             caclulator form = new caclulator();
             form.Show(this);  //Show Form assigning this form as the forms owner
-            Hide();
+        }
+
+        private void warehouseImagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            warehouseImages form = new warehouseImages();
+            form.Show(this);  //Show Form assigning this form as the forms owner
+        }
+
+        private void itemNamesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            warehouseStrings form = new warehouseStrings();
+            form.Show(this);  //Show Form assigning this form as the forms owner
         }
     }
     //class examples
     class myClass
     {
-        private
-            int chocolate;// not accesible by other classes
-        public 
-            void eat() { /*code here*/ chocolate--; } //accesible by other classes
+    private
+        int chocolate;// not accesible by other classes
+    public
+        void eat()
+    { /*code here*/ chocolate--; } //accesible by other classes
     }
     class anotherClass
     {
-        public
-            int ReadWrite{ get; set; }
-        public 
-            int ReadOnly { get; }
+    public
+        int ReadWrite
+    { get; set; }
+    public
+        int ReadOnly
+    { get; }
     }
+
 
 }
