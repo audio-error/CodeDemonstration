@@ -63,4 +63,11 @@
   <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>This demonstration shows the power of C#'s LINQ
+ statements and
+&lt;insert other things preferably calculator related&gt;. 
+you can find examples for LINQ under Views, and
+other stuff examlpes under Tools</value>
+  </data>
 </root>
