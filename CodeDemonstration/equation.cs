@@ -101,7 +101,15 @@ namespace CodeDemonstration
             }
             //add the final number
             if (currentNum != "")
-                equationParts.Enqueue(int.Parse(currentNum));
+            {
+                int n;
+                if (!int.TryParse(currentNum,out n))
+                {
+                    n = 0;
+                }
+                equationParts.Enqueue(n);
+            }
+
             else equationParts.Clear();
             currentNum = "";
 
