@@ -135,6 +135,12 @@ namespace CodeDemonstration
         {
             
         }
+
+        private void partyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inheritance form = new inheritance();
+            form.Show(this);  //Show Form assigning this form as the forms owner
+        }
     }
     //class examples
     class myClass

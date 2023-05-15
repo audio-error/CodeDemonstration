@@ -39,6 +39,7 @@
             this.itemNamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usingTheFORMEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.partyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 115);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(146, 33);
+            this.menuStrip2.Size = new System.Drawing.Size(266, 33);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -87,7 +88,7 @@
             // caculatorToolStripMenuItem
             // 
             this.caculatorToolStripMenuItem.Name = "caculatorToolStripMenuItem";
-            this.caculatorToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.caculatorToolStripMenuItem.Size = new System.Drawing.Size(158, 30);
             this.caculatorToolStripMenuItem.Text = "Caculator";
             this.caculatorToolStripMenuItem.Click += new System.EventHandler(this.startButton_Click);
             // 
@@ -96,7 +97,8 @@
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.warehouseImagesToolStripMenuItem,
             this.itemNamesToolStripMenuItem,
-            this.usingTheFORMEditorToolStripMenuItem});
+            this.usingTheFORMEditorToolStripMenuItem,
+            this.partyToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.viewToolStripMenuItem.Text = "Views";
@@ -132,6 +134,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = resources.GetString("label2.Text");
             // 
+            // partyToolStripMenuItem
+            // 
+            this.partyToolStripMenuItem.Name = "partyToolStripMenuItem";
+            this.partyToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
+            this.partyToolStripMenuItem.Text = "Party";
+            this.partyToolStripMenuItem.Click += new System.EventHandler(this.partyToolStripMenuItem_Click);
+            // 
             // Report_Examples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -163,5 +172,6 @@
         private ToolStripMenuItem itemNamesToolStripMenuItem;
         private Label label2;
         private ToolStripMenuItem usingTheFORMEditorToolStripMenuItem;
+        private ToolStripMenuItem partyToolStripMenuItem;
     }
 }
