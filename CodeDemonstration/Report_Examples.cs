@@ -18,7 +18,6 @@ namespace CodeDemonstration
         public Report_Examples()
         {
             InitializeComponent();
-
             //example of a switch-case for the document
             int age = 1;
             string rating = "G";
@@ -124,6 +123,17 @@ namespace CodeDemonstration
         {
             warehouseStrings form = new warehouseStrings();
             form.Show(this);  //Show Form assigning this form as the forms owner
+        }
+
+        private void usingTheFORMEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            usingEdotr form = new usingEdotr();
+            form.Show(this);  //Show Form assigning this form as the forms owner
+        }
+
+        private void toolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
     //class examples

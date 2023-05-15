@@ -37,6 +37,7 @@
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.warehouseImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemNamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usingTheFORMEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +69,7 @@
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolsToolStripMenuItem,
             this.viewToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(25, 118);
+            this.menuStrip2.Location = new System.Drawing.Point(0, 115);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(146, 33);
             this.menuStrip2.TabIndex = 2;
@@ -81,6 +82,7 @@
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.toolsToolStripMenuItem.Text = "Tools";
+            this.toolsToolStripMenuItem.Click += new System.EventHandler(this.toolsToolStripMenuItem_Click);
             // 
             // caculatorToolStripMenuItem
             // 
@@ -93,7 +95,8 @@
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.warehouseImagesToolStripMenuItem,
-            this.itemNamesToolStripMenuItem});
+            this.itemNamesToolStripMenuItem,
+            this.usingTheFORMEditorToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.viewToolStripMenuItem.Text = "Views";
@@ -101,24 +104,31 @@
             // warehouseImagesToolStripMenuItem
             // 
             this.warehouseImagesToolStripMenuItem.Name = "warehouseImagesToolStripMenuItem";
-            this.warehouseImagesToolStripMenuItem.Size = new System.Drawing.Size(235, 30);
+            this.warehouseImagesToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
             this.warehouseImagesToolStripMenuItem.Text = "Warehouse Images";
             this.warehouseImagesToolStripMenuItem.Click += new System.EventHandler(this.warehouseImagesToolStripMenuItem_Click);
             // 
             // itemNamesToolStripMenuItem
             // 
             this.itemNamesToolStripMenuItem.Name = "itemNamesToolStripMenuItem";
-            this.itemNamesToolStripMenuItem.Size = new System.Drawing.Size(235, 30);
+            this.itemNamesToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
             this.itemNamesToolStripMenuItem.Text = "Item Names";
             this.itemNamesToolStripMenuItem.Click += new System.EventHandler(this.itemNamesToolStripMenuItem_Click);
+            // 
+            // usingTheFORMEditorToolStripMenuItem
+            // 
+            this.usingTheFORMEditorToolStripMenuItem.Name = "usingTheFORMEditorToolStripMenuItem";
+            this.usingTheFORMEditorToolStripMenuItem.Size = new System.Drawing.Size(266, 30);
+            this.usingTheFORMEditorToolStripMenuItem.Text = "Using the FORM editor";
+            this.usingTheFORMEditorToolStripMenuItem.Click += new System.EventHandler(this.usingTheFORMEditorToolStripMenuItem_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(346, 80);
+            this.label2.Location = new System.Drawing.Point(322, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(364, 105);
+            this.label2.Size = new System.Drawing.Size(363, 210);
             this.label2.TabIndex = 3;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -152,5 +162,6 @@
         private ToolStripMenuItem warehouseImagesToolStripMenuItem;
         private ToolStripMenuItem itemNamesToolStripMenuItem;
         private Label label2;
+        private ToolStripMenuItem usingTheFORMEditorToolStripMenuItem;
     }
 }

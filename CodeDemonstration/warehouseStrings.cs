@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace CodeDemonstration
 {
+    //-OOP concept: structs & classes
+    //C# has both structs and classes for encapsulating data. Further, access modifiers change
+    //how abstract data is by hiding certain components from view.
     public partial class warehouseStrings : Form
     {
         ImageWithDetails[] images = new ImageWithDetails[6];
@@ -69,13 +72,19 @@ namespace CodeDemonstration
             label2.Text = string.Empty;
             foreach (ImageWithDetails item in ImageQuery)
             {
-                label2.Text += item.name + " | " + item.cost + " | " + item.desciption + "\n";
+                label2.Text += item.name + " | $" + item.cost + " | " + item.desciption + "\n";
             }
         }
+
+        //buttons are a prime example of event-driven programming. The user is initiating change within the code by
+        //entering their own input. This allows for responsive programs that can react to user input.
 
         //list all tables
         private void button1_Click(object sender, EventArgs e)
         {
+            //LINQ statements are functionally and syntactically similar to SQL.
+            //here, the from statements selects which iterable to query (in this case an array of images)
+            //the selet statement then returns the query to an new iterable, contianing the result.
             IEnumerable<ImageWithDetails> ImageQuery = from IM in images
                                                        select IM;
 
@@ -84,6 +93,7 @@ namespace CodeDemonstration
         //list tables 1-3
         private void button2_Click(object sender, EventArgs e)
         {
+            //where add's conditionality t oa query for filtering specific results.
             //the where statement can perform complicated operation like convert the 7th letter to a number, and 
             //check if it is less than three
             IEnumerable<ImageWithDetails> ImageQuery = from IM in images
@@ -111,10 +121,16 @@ namespace CodeDemonstration
         //list tabels with "wooden" in their descrition
         private void button5_Click(object sender, EventArgs e)
         {
+            //the Contains method also creates an easy and readable way to check if a string matches criteria
             IEnumerable<ImageWithDetails> ImageQuery = from IM in images
                                                        where IM.desciption.Contains("wooden")
                                                        select IM;
             setLabel(ImageQuery);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

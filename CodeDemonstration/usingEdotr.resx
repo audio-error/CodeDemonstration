@@ -57,22 +57,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="menuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <data name="label2.Text" xml:space="preserve">
-    <value>This demonstration shows the power of C#'s LINQ
- statements, Asyncronous programming, event 
-driven programming and object-oriented
-concepts
-&lt;insert bad things here&gt;. 
-you can find examples for LINQ under Views, and
-Asyncronous examples under tools. Event driven
-programming and object oriented examples can be
-see throughout the demonstration and more
-thouroughly explained in the source code.</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Having to use the Built-in editor for Visual studio is
+a main drawback if C# when developing windows 
+forms apps. The lack of any streamlined realoading 
+makes previewing changes cumbersome as a
+developer must reload and reompile their whole
+program to view changes made. Furthermore,
+properties like label text and button click events are 
+difficult to access as they are hiddem behind a menu
+of every single property with no organisation for most
+useful to least, or any hot-keys to quickly edit fields.
+
+Making changes to buttons like what method they call
+can easily break the entire form, leaving an iretrievable 
+blank form and all your design erased. Changing 
+properties like which form loads first when your program
+starts is also difficult, as they require manually replacing 
+code which could lead to program breakage if done
+incorrectly.</value>
   </data>
 </root>

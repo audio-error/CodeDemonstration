@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace CodeDemonstration
 {
+    //-OOP concept: structs & classes
+    //C# has both structs and classes for encapsulating data. Further, access modifiers change
+    //how abstract data is by hiding certain components from view.
     public struct ImageWithDetails
     {
         public Image image;
@@ -74,17 +77,23 @@ namespace CodeDemonstration
             }
         }
 
-        public void changeImage(string n)
+        public async void changeImage(string n)
         {
-            //LINQ statements are similar to SQL and return queary result in the form of a IEnumerable
+            //LINQ statements are similar to SQL and return query result in the form of a IEnumerable
             //LINQ can query an abstract datatype like this struct
             IEnumerable<ImageWithDetails> ImageQuery = from IM in images
                                           where IM.name == n
                                           select IM;
-            label1.Text = ImageQuery.First().name;
+
+            await addName(ImageQuery, ImageQuery.First().name);
             label2.Text = ImageQuery.First().desciption;
             label4.Text = "$" + ImageQuery.First().cost;
             pictureBox1.Image = ImageQuery.First().image;
+        }
+
+        private async Task addName(IEnumerable<ImageWithDetails> IQ, string n)
+        {
+            label1.Text = IQ.First().name;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -103,7 +112,7 @@ namespace CodeDemonstration
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            //C# methdods and statements can be empty, unlike Python.
         }
     }
 }

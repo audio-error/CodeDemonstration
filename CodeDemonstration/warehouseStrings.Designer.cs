@@ -45,7 +45,8 @@
             this.label1.Size = new System.Drawing.Size(314, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "This page will list all the table\'s and their descriptions.\r\nThe buttons will per" +
-    "form various LINQ quaries on this data";
+    "form various LINQ queries on this data";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
