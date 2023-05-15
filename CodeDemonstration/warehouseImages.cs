@@ -86,16 +86,27 @@ namespace CodeDemonstration
                                           select IM;
 
             await addName(ImageQuery, ImageQuery.First().name);
-            label2.Text = ImageQuery.First().desciption;
-            label4.Text = "$" + ImageQuery.First().cost;
-            pictureBox1.Image = ImageQuery.First().image;
+            await addDescription(ImageQuery, ImageQuery.First().desciption);
+            await addCost(ImageQuery, ImageQuery.First().cost);
+            await addImage(ImageQuery, ImageQuery.First().image);
         }
 
         private async Task addName(IEnumerable<ImageWithDetails> IQ, string n)
         {
             label1.Text = IQ.First().name;
         }
-
+        private async Task addDescription(IEnumerable<ImageWithDetails> IQ, string d)
+        {
+            label2.Text = IQ.First().desciption;
+        }
+        private async Task addCost(IEnumerable<ImageWithDetails> IQ, double c)
+        {
+            label4.Text = "$" + IQ.First().cost;
+        }
+        private async Task addImage(IEnumerable<ImageWithDetails> IQ, Image i)
+        {
+            pictureBox1.Image = IQ.First().image;
+        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
