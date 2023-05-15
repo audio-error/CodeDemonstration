@@ -11,9 +11,10 @@ using System.Windows.Forms;
 
 namespace CodeDemonstration
 {
-    //-OOP concept: structs & classes
-    //C# has both structs and classes for encapsulating data. Further, access modifiers change
-    //how abstract data is by hiding certain components from view.
+    /*-OOP concept: structs & classes
+     *C# has both structs and classes for encapsulating data. Further, access modifiers change
+     *how abstract data is by hiding certain components from view.
+     */
     public struct ImageWithDetails
     {
         public Image image;
