@@ -50,7 +50,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "usingEdotr";
-            this.Text = "usingEdotr";
+            this.Text = "Using the Editor";
             this.ResumeLayout(false);
             this.PerformLayout();
 

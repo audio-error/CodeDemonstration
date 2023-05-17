@@ -68,9 +68,12 @@
  statements, Asyncronous programming, event 
 driven programming and object-oriented
 concepts
-&lt;insert bad things here&gt;. 
-you can find examples for LINQ under Views, and
-Asyncronous examples under tools. Event driven
+It also explains the poor graphical editor for C#
+which is required for developing most forms, and 
+explains the confusing syntax for inheritance and 
+interfaces
+you can find examples for LINQ and Asyncronous 
+examples under views. Event driven
 programming and object oriented examples can be
 see throughout the demonstration and more
 thouroughly explained in the source code.</value>

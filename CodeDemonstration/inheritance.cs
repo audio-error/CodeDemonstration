@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeDemonstration.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,14 @@ namespace CodeDemonstration
     //Interfaces and inhereitance use the same syntax making it hard to tell what is which in C#
     public partial class inheritance : Form
     {
+        SoundPlayer sound = new SoundPlayer(Resource1.Darude_Sandstorm);
         public inheritance()
         {
             InitializeComponent();
+
+            
+            sound.Play();
+
             new Thread(() =>
             {
                 Thread.CurrentThread.IsBackground= true;
@@ -29,7 +35,7 @@ namespace CodeDemonstration
                 {
                     Random random = new Random();
                     Color color = Color.FromArgb(random.Next(0, 256), random.Next(0, 256), random.Next(0, 256));
-                    Thread.Sleep(400);
+                    Thread.Sleep(333);
                     BackColor = color;
                 }
             }).Start();
@@ -39,6 +45,10 @@ namespace CodeDemonstration
         {
         }
 
+        private void inheritance_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            sound.Stop();
+        }
     }
 
     //This class is inherently confusing to see what is an interface and what is a superclass. 

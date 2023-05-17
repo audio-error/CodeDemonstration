@@ -38,8 +38,8 @@
             this.warehouseImagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemNamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usingTheFORMEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
             this.partyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             // 
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(741, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(710, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,7 +72,7 @@
             this.viewToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 115);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(266, 33);
+            this.menuStrip2.Size = new System.Drawing.Size(146, 33);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -124,16 +124,6 @@
             this.usingTheFORMEditorToolStripMenuItem.Text = "Using the FORM editor";
             this.usingTheFORMEditorToolStripMenuItem.Click += new System.EventHandler(this.usingTheFORMEditorToolStripMenuItem_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(322, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(363, 210);
-            this.label2.TabIndex = 3;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
             // partyToolStripMenuItem
             // 
             this.partyToolStripMenuItem.Name = "partyToolStripMenuItem";
@@ -141,18 +131,29 @@
             this.partyToolStripMenuItem.Text = "Party";
             this.partyToolStripMenuItem.Click += new System.EventHandler(this.partyToolStripMenuItem_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(322, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(363, 273);
+            this.label2.TabIndex = 3;
+            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Report_Examples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 341);
+            this.ClientSize = new System.Drawing.Size(710, 374);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Report_Examples";
-            this.Text = "Finance System";
+            this.Text = "Table Warehouse";
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);

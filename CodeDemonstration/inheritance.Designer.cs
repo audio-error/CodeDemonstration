@@ -34,23 +34,25 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 45);
+            this.label1.Size = new System.Drawing.Size(698, 90);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Behind this form are three classes, one super class, one sub class and interface." +
-    "\r\nThe form simply demonstates the difficulty of determining what are classes and" +
-    "\r\nwhat are interfaces.";
+            this.label1.Text = "Behind this form are three classes, one super class, one sub class and an\r\ninterf" +
+    "ace. The form simply demonstates the difficulty of determining \r\nwhat are classe" +
+    "s and what are interfaces in C# syntax.";
             // 
-            // Form1
+            // inheritance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "inheritance";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.inheritance_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -141,6 +141,11 @@ namespace CodeDemonstration
             inheritance form = new inheritance();
             form.Show(this);  //Show Form assigning this form as the forms owner
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     //class examples
     class myClass
